@@ -5,78 +5,78 @@ class Person extends Model { }
 
 Person.init(
     {
-        Gender: {
+        gender: {
             type: DataTypes.STRING,
         },
-        NameSet: {
+        nameSet: {
             type: DataTypes.DECIMAL,
         },
-        Title: {
+        title: {
             type: DataTypes.STRING,
         },
-        GivenName: {
+        givenName: {
             type: DataTypes.STRING,
         },
-        MiddleInitial: {
+        middleInitial: {
             type: DataTypes.STRING,
         },
-        Surname: {
+        surname: {
             type: DataTypes.STRING,
         },
-        StreetAddress: {
+        streetAddress: {
             type: DataTypes.STRING,
         },
-        City: {
+        city: {
             type: DataTypes.STRING,
         },
-        State: {
+        state: {
             type: DataTypes.STRING,
         },
-        StateFull: {
-            type: DataTypes.STRING,
-        },
-        
-        Username: {
+        stateFull: {
             type: DataTypes.STRING,
         },
         
-        Birthday: {
+        username: {
+            type: DataTypes.STRING,
+        },
+        
+        birthday: {
             type: DataTypes.DATE,
         },
         
-        BrowserUserAgent: {
+        browserUserAgent: {
             type: DataTypes.STRING,
         },
         
-        Kilograms: {
+        kilograms: {
             type: DataTypes.DECIMAL,
         },
         
-        Centimeters: {
+        centimeters: {
             type: DataTypes.NUMBER,
         },
         
-        Latitude: {
+        latitude: {
             type: DataTypes.STRING,
         },
         
-        Longitude: {
+        longitude: {
             type: DataTypes.STRING,
         },
         
-        BloodType: {
+        bloodType: {
             type: DataTypes.STRING,
         },
         
-        Vehicle: {
+        vehicle: {
             type: DataTypes.STRING,
         },
         
-        Domain: {
+        domain: {
             type: DataTypes.STRING,
         },
         
-        Occupation: {
+        occupation: {
             type: DataTypes.STRING,
         },
     },
