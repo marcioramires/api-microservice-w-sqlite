@@ -5,11 +5,17 @@ class Person extends Model { }
 
 Person.init(
     {
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
         gender: {
             type: DataTypes.STRING,
         },
         nameSet: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.STRING,
         },
         title: {
             type: DataTypes.STRING,
@@ -35,54 +41,56 @@ Person.init(
         stateFull: {
             type: DataTypes.STRING,
         },
-        
+
         username: {
             type: DataTypes.STRING,
         },
-        
+
         birthday: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
         },
-        
+
         browserUserAgent: {
             type: DataTypes.STRING,
         },
-        
+
         kilograms: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.STRING,
         },
-        
+
         centimeters: {
-            type: DataTypes.NUMBER,
+            type: DataTypes.STRING,
         },
-        
+
         latitude: {
             type: DataTypes.STRING,
         },
-        
+
         longitude: {
             type: DataTypes.STRING,
         },
-        
+
         bloodType: {
             type: DataTypes.STRING,
         },
-        
+
         vehicle: {
             type: DataTypes.STRING,
         },
-        
+
         domain: {
             type: DataTypes.STRING,
         },
-        
+
         occupation: {
             type: DataTypes.STRING,
         },
     },
     {
         sequelize,
-        modelName: "person"
+        tableName: 'db',
+        createdAt: false,
+        updatedAt: false,
     }
 );
 
