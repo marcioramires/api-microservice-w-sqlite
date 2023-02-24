@@ -5,11 +5,15 @@ class Person extends Model { }
 
 Person.init(
     {
+        id: {
+            type: DataTypes.NUMBER,
+            primaryKey: true,
+        },
         gender: {
             type: DataTypes.STRING,
         },
         nameSet: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.STRING,
         },
         title: {
             type: DataTypes.STRING,
@@ -41,7 +45,7 @@ Person.init(
         },
         
         birthday: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
         },
         
         browserUserAgent: {
@@ -49,11 +53,11 @@ Person.init(
         },
         
         kilograms: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.STRING,
         },
         
         centimeters: {
-            type: DataTypes.NUMBER,
+            type: DataTypes.STRING,
         },
         
         latitude: {
@@ -82,7 +86,8 @@ Person.init(
     },
     {
         sequelize,
-        modelName: "person"
+        createdAt: false,
+        updatedAt: false,
     }
 );
 
