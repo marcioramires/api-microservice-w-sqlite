@@ -4,6 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: api-teste-inovia
+    container_name: api-w-sqlite
     ports:
       - '3000:3000'
